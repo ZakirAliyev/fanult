@@ -1,0 +1,125 @@
+#rightSideBar {
+  width: 380px;
+  position: sticky;
+  top: 0;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin: 12px 12px 12px 30px;
+    padding: 12px 16px;
+    gap: 12px;
+
+    .postWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .icon {
+        font-size: calc(1rem + 2px);
+      }
+    }
+
+    .title {
+      font-size: calc(1rem + 4px);
+      font-weight: 500;
+    }
+
+    .contentDescription,
+    .contentPostsCount {
+      font-size: calc(1rem - 4px);
+      color: var(--text-color-secondary);
+      margin: 2px 0;
+    }
+
+    .content {
+      font-size: calc(1rem - 2px);
+    }
+  }
+
+  .firstWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .fixedBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 4px;
+
+    .profileImageWrapper {
+      width: 40px;
+      flex-shrink: 0;
+
+      @media screen and (max-width: 992px) {
+        width: 30px;
+      }
+    }
+
+    .profileImage {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      @media screen and (max-width: 992px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .textWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      .name {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+
+      .username {
+        font-size: calc(1rem - 2px);
+        color: var(--text-color-secondary);
+      }
+    }
+
+    .icon {
+      font-size: calc(1rem + 4px);
+    }
+  }
+
+  .followButton, .subscribeButton {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    font-size: calc(1rem - 2px);
+    background-color: var(--border-color-secondary);
+    color: var(--bg-color);
+    border-radius: 100px;
+    border: none;
+    font-weight: 500;
+  }
+
+  .subscribeButton {
+    max-width: max-content;
+    width: 100%;
+  }
+
+  .showMore {
+    font-size: 1rem;
+    color: var(--border-color-secondary);
+  }
+}
