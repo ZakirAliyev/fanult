@@ -4,21 +4,21 @@ import Card from "../Card/index.jsx";
 function Discover() {
     const imageSets = [
         [
+            "https://pbs.twimg.com/media/GolddJRXsAA5pA7?format=jpg&name=900x900"
+        ],
+        [
+            "https://pbs.twimg.com/media/GoldZRFWEAAubAi?format=jpg&name=900x900",
+            "https://pbs.twimg.com/media/GolddJRXsAA5pA7?format=jpg&name=900x900"
+        ],
+        [
+            "https://pbs.twimg.com/media/GoldZRKX0AASmvD?format=jpg&name=900x900",
+            "https://pbs.twimg.com/media/GoldZRFWEAAubAi?format=jpg&name=900x900",
+            "https://pbs.twimg.com/media/GolddJRXsAA5pA7?format=jpg&name=900x900"
+        ],
+        [
             "https://pbs.twimg.com/media/GoldZRCXoAAr60a?format=jpg&name=900x900",
             "https://pbs.twimg.com/media/GoldZRKX0AASmvD?format=jpg&name=900x900",
             "https://pbs.twimg.com/media/GoldZRFWEAAubAi?format=jpg&name=900x900",
-            "https://pbs.twimg.com/media/GolddJRXsAA5pA7?format=jpg&name=900x900"
-        ],
-        [
-            "https://pbs.twimg.com/media/GoldZRKX0AASmvD?format=jpg&name=900x900",
-            "https://pbs.twimg.com/media/GoldZRFWEAAubAi?format=jpg&name=900x900",
-            "https://pbs.twimg.com/media/GolddJRXsAA5pA7?format=jpg&name=900x900"
-        ],
-        [
-            "https://pbs.twimg.com/media/GoldZRFWEAAubAi?format=jpg&name=900x900",
-            "https://pbs.twimg.com/media/GolddJRXsAA5pA7?format=jpg&name=900x900"
-        ],
-        [
             "https://pbs.twimg.com/media/GolddJRXsAA5pA7?format=jpg&name=900x900"
         ]
     ];
