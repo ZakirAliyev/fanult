@@ -39,7 +39,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
+
+    .moreAlt {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
 
     .name {
       font-weight: 500;

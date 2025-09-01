@@ -1,55 +1,35 @@
-#rightSideBar {
-  width: 380px;
-  position: sticky;
-  top: 0;
-  max-height: 100dvh;
-  height: 100%;
-  overflow-y: auto;
+#tagsAndHowToFollow {
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
-  @media (max-width: 992px) {
-    display: none;
-  }
-
-  .box {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    margin: 12px 12px 12px 30px;
-    padding: 12px 16px;
-    gap: 12px;
-
-    .postWrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      .icon {
-        font-size: calc(1rem + 2px);
-      }
-    }
-
-    .title {
-      font-size: calc(1rem + 4px);
-      font-weight: 500;
-    }
-
-    .contentDescription,
-    .contentPostsCount {
-      font-size: calc(1rem - 4px);
-      color: var(--text-color-secondary);
-      margin: 2px 0;
-    }
-
-    .content {
-      font-size: calc(1rem - 2px);
-    }
-  }
-
-  .firstWrapper {
+  .postWrapper {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    justify-content: space-between;
+
+    .icon {
+      font-size: calc(1rem + 2px);
+    }
+  }
+
+  .contentDescription,
+  .contentPostsCount {
+    font-size: calc(1rem - 3px);
+    color: var(--text-color-secondary);
+    margin: 2px 0;
+  }
+
+  .content {
+    font-size: calc(1rem - 1px);
+  }
+
+  .showMore {
+    font-size: 1rem;
+    color: var(--border-color-secondary);
   }
 
   .fixedBottom {
@@ -102,7 +82,7 @@
     }
   }
 
-  .followButton, .subscribeButton {
+  .followButton {
     height: 30px;
     display: flex;
     align-items: center;
@@ -116,13 +96,20 @@
     font-weight: 500;
   }
 
+  .firstWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
   .subscribeButton {
     max-width: max-content;
     width: 100%;
   }
 
-  .showMore {
-    font-size: 1rem;
-    color: var(--border-color-secondary);
+  .title {
+    font-size: calc(1rem + 4px);
+    font-weight: 500;
+    margin-top: 12px;
   }
 }

@@ -1,0 +1,76 @@
+#exploreTabs {
+  border: 1px solid var(--border-color);
+
+  .inputWrapperWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .inputWrapper {
+      position: relative;
+      width: 100%;
+
+      .iconSearch {
+        position: absolute;
+        top: 13px;
+        left: 16px;
+        margin: 12px 16px;
+        color: var(--text-color-secondary);
+      }
+
+      input {
+        width: calc(100% - 16px);
+        height: 42px;
+        padding: 0 16px 0 42px;
+        margin: 12px 0 12px 16px;
+        border-radius: 100px;
+        border: 1px solid var(--border-color);
+        background: var(--bg-color);
+
+        &::placeholder {
+          color: var(--text-color);
+        }
+      }
+    }
+
+    .settingIcon {
+      margin: 0 16px;
+      font-size: calc(1rem + 4px);
+    }
+  }
+
+  .exploreTabsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 32px;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+
+    .tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 55px;
+      font-weight: 500;
+      cursor: pointer;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        border-radius: 2px;
+        border-bottom: 4px solid var(--border-color-secondary);
+        font-size: calc(1rem - 1px);
+
+        &:hover {
+          border-bottom: 4px solid var(--border-color-secondary);
+        }
+      }
+    }
+  }
+}

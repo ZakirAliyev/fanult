@@ -1,4 +1,4 @@
-#tabs {
+#homeTabs {
   border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
@@ -15,14 +15,19 @@
     justify-content: center;
     height: 55px;
     font-weight: 500;
+    cursor: pointer;
 
     span {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 55px;
-      border-bottom: 4px solid var(--border-color-secondary);
       border-radius: 2px;
+      border-bottom: 4px solid var(--border-color-secondary);
+
+      &:hover {
+        border-bottom: 4px solid var(--border-color-secondary);
+      }
     }
   }
 }

@@ -6,19 +6,23 @@ import {TbPremiumRights} from "react-icons/tb";
 import {HiOutlineUserCircle} from "react-icons/hi";
 import {CgMoreAlt, CgMoreO} from "react-icons/cg";
 import logo from "/src/assets/logo.png"
+import {useNavigate} from "react-router";
+import profileImage from "/src/assets/profileImage.png"
 
 function LeftSideBar() {
 
+    const navigate = useNavigate();
+
     const arr = [
-        {id: 0, name: "Logo", type: "logo"},
-        {id: 1, name: "Home", icon: <GoHome className={"icon"}/>},
-        {id: 2, name: "Explore ", icon: <IoSearchOutline className={"icon"}/>},
-        {id: 3, name: "Notifications", icon: <IoNotificationsOutline className={"icon"}/>},
-        {id: 4, name: "Messages", icon: <AiOutlineMessage className={"icon"}/>},
-        {id: 5, name: "Communities", icon: <IoPeopleOutline className={"icon"}/>},
-        {id: 6, name: "Premium", icon: <TbPremiumRights className={"icon"}/>},
-        {id: 7, name: "Profile", icon: <HiOutlineUserCircle className={"icon"}/>},
-        {id: 8, name: "More", icon: <CgMoreO className={"icon"}/>},
+        {id: 0, name: "Logo", type: "logo", path: ''},
+        {id: 1, name: "Home", icon: <GoHome className={"icon"}/>, path: 'home'},
+        {id: 2, name: "Explore ", icon: <IoSearchOutline className={"icon"}/>, path: 'explore'},
+        {id: 3, name: "Notifications", icon: <IoNotificationsOutline className={"icon"}/>, path: ''},
+        {id: 4, name: "Messages", icon: <AiOutlineMessage className={"icon"}/>, path: ''},
+        {id: 5, name: "Communities", icon: <IoPeopleOutline className={"icon"}/>, path: ''},
+        {id: 6, name: "Premium", icon: <TbPremiumRights className={"icon"}/>, path: ''},
+        {id: 7, name: "Profile", icon: <HiOutlineUserCircle className={"icon"}/>, path: 'profile'},
+        {id: 8, name: "More", icon: <CgMoreO className={"icon"}/>, path: ''},
         {id: 9, name: "Post", type: "button"},
     ]
 
@@ -31,7 +35,9 @@ function LeftSideBar() {
                     )}
 
                     {item?.type !== "logo" && item?.type !== "button" && (
-                        <div className={"box"}>
+                        <div className={"box"} onClick={()=> {
+                            navigate(`/${item?.path}`)
+                        }}>
                             {item?.icon}
                             <span>{item?.name}</span>
                         </div>
@@ -47,14 +53,14 @@ function LeftSideBar() {
                 <div className={"firstWrapper"}>
                     <div className={"profileImageWrapper"}>
                         <img
-                            src={"https://avatars.githubusercontent.com/u/106933941"}
+                            src={profileImage}
                             alt={"Image"}
                             className={"profileImage"}
                         />
                     </div>
                     <div className={"textWrapper"}>
-                        <div className={"name"}>Zakir Aliyev</div>
-                        <div className={"username"}>@FraserBogs</div>
+                        <div className={"name"}>Rihanna</div>
+                        <div className={"username"}>@rihanna</div>
                     </div>
                 </div>
                 <CgMoreAlt className={"icon"}/>

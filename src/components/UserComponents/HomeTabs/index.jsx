@@ -1,8 +1,8 @@
 import './index.scss'
 
-function Tabs() {
+function HomeTabs() {
     return (
-        <section id={"tabs"}>
+        <section id={"homeTabs"}>
             <div className={"tab"}>
                 <span>For you</span>
             </div>
@@ -11,4 +11,4 @@ function Tabs() {
     );
 }
 
-export default Tabs;
+export default HomeTabs;

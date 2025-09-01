@@ -5,6 +5,7 @@ import {FaRegBookmark, FaRegHeart, FaRegShareFromSquare, FaRetweet} from "react-
 import {IoAnalytics} from "react-icons/io5";
 import {MdOutlineVerified} from "react-icons/md";
 import {GoDotFill} from "react-icons/go";
+import {CgMoreAlt} from "react-icons/cg";
 
 function Card({images}) {
     return (
@@ -18,11 +19,14 @@ function Card({images}) {
             </div>
             <div className="contentWrapper">
                 <div className={"titleWrapper"}>
-                    <div className={"name"}>Rihanna</div>
-                    <MdOutlineVerified className={"verifiedIcon"}/>
-                    <div className={"username"}>@rihanna</div>
-                    <GoDotFill className={"dotIcon"}/>
-                    <div className={"date"}>Aug 26</div>
+                    <div className={"moreAlt"}>
+                        <div className={"name"}>Rihanna</div>
+                        <MdOutlineVerified className={"verifiedIcon"}/>
+                        <div className={"username"}>@rihanna</div>
+                        <GoDotFill className={"dotIcon"}/>
+                        <div className={"date"}>Aug 26</div>
+                    </div>
+                    <CgMoreAlt className={"icon"}/>
                 </div>
                 <div className={"description"}>
                     20 years ago, i left my country, my culture, my food, and family to embark on a journey that started

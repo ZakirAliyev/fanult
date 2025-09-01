@@ -1,5 +1,6 @@
 import './index.scss'
 import {CgMoreAlt} from "react-icons/cg";
+import profileImage from "/src/assets/profileImage.png"
 
 function RightSideBar() {
 
@@ -46,14 +47,14 @@ function RightSideBar() {
                     <div className={"firstWrapper"}>
                         <div className={"profileImageWrapper"}>
                             <img
-                                src={"https://avatars.githubusercontent.com/u/106933941"}
+                                src={profileImage}
                                 alt={"Image"}
                                 className={"profileImage"}
                             />
                         </div>
                         <div className={"textWrapper"}>
-                            <div className={"name"}>Zakir Aliyev</div>
-                            <div className={"username"}>@FraserBogs</div>
+                            <div className={"name"}>Rihanna</div>
+                            <div className={"username"}>@rihanna</div>
                         </div>
                     </div>
                     <button className={"followButton"}>Follow</button>
@@ -62,14 +63,14 @@ function RightSideBar() {
                     <div className={"firstWrapper"}>
                         <div className={"profileImageWrapper"}>
                             <img
-                                src={"https://avatars.githubusercontent.com/u/106933941"}
+                                src={profileImage}
                                 alt={"Image"}
                                 className={"profileImage"}
                             />
                         </div>
                         <div className={"textWrapper"}>
-                            <div className={"name"}>Zakir Aliyev</div>
-                            <div className={"username"}>@FraserBogs</div>
+                            <div className={"name"}>Rihanna</div>
+                            <div className={"username"}>@rihanna</div>
                         </div>
                     </div>
                     <button className={"followButton"}>Follow</button>
@@ -78,14 +79,14 @@ function RightSideBar() {
                     <div className={"firstWrapper"}>
                         <div className={"profileImageWrapper"}>
                             <img
-                                src={"https://avatars.githubusercontent.com/u/106933941"}
+                                src={profileImage}
                                 alt={"Image"}
                                 className={"profileImage"}
                             />
                         </div>
                         <div className={"textWrapper"}>
-                            <div className={"name"}>Zakir Aliyev</div>
-                            <div className={"username"}>@FraserBogs</div>
+                            <div className={"name"}>Rihanna</div>
+                            <div className={"username"}>@rihanna</div>
                         </div>
                     </div>
                     <button className={"followButton"}>Follow</button>

@@ -2,16 +2,14 @@ import './index.scss'
 import Discover from "../../../components/UserComponents/Discover/index.jsx";
 import LeftSideBar from "../../../components/UserComponents/LeftSideBar/index.jsx";
 import RightSideBar from "../../../components/UserComponents/RightSideBar/index.jsx";
-import WhatsHappening from "../../../components/UserComponents/WhatsHappening/index.jsx";
-import HomeTabs from "../../../components/UserComponents/HomeTabs/index.jsx";
+import ProfileTabs from "../../../components/UserComponents/ProfileTabs/index.jsx";
 
-function HomePage() {
+function ProfilePage() {
     return (
-        <section id={"homePage"}>
+        <section id={"profilePage"}>
             <LeftSideBar/>
             <div className={"middlePart"}>
-                <HomeTabs/>
-                <WhatsHappening images={[]}/>
+                <ProfileTabs/>
                 <Discover/>
             </div>
             <RightSideBar/>
@@ -19,4 +17,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default ProfilePage;

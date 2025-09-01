@@ -2,16 +2,16 @@ import './index.scss'
 import Discover from "../../../components/UserComponents/Discover/index.jsx";
 import LeftSideBar from "../../../components/UserComponents/LeftSideBar/index.jsx";
 import RightSideBar from "../../../components/UserComponents/RightSideBar/index.jsx";
-import WhatsHappening from "../../../components/UserComponents/WhatsHappening/index.jsx";
-import HomeTabs from "../../../components/UserComponents/HomeTabs/index.jsx";
+import ExploreTabs from "../../../components/UserComponents/ExploreTabs/index.jsx";
+import TagsAndHowToFollow from "../../../components/UserComponents/TagsAndHowToFollow/index.jsx";
 
-function HomePage() {
+function ExplorePage() {
     return (
-        <section id={"homePage"}>
+        <section id={"explorePage"}>
             <LeftSideBar/>
             <div className={"middlePart"}>
-                <HomeTabs/>
-                <WhatsHappening images={[]}/>
+                <ExploreTabs/>
+                <TagsAndHowToFollow/>
                 <Discover/>
             </div>
             <RightSideBar/>
@@ -19,4 +19,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default ExplorePage;

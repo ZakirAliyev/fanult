@@ -31,12 +31,21 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-button, a, .link {
+button, a, .link, textarea {
   transition: all 0.2s ease;
+  outline: none;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.verifiedIcon {
+  color: var(--border-color-secondary);
 }
 
 button, input {
