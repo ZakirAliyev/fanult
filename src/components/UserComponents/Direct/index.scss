@@ -1,0 +1,118 @@
+#direct {
+  width: 100%;
+  border-right: 1px solid var(--border-color);
+  height: 100vh;
+  border-left: 1px solid var(--border-color);
+
+  .mainWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 16px;
+
+    .firstWrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .verifiedIcon {
+        font-size: calc(1rem + 2px);
+      }
+    }
+
+    .icon {
+      font-size: calc(1rem + 2px);
+    }
+  }
+
+  .name {
+    font-size: calc(1rem + 4px);
+    font-weight: 600;
+  }
+
+  .iconWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .inputWrapper {
+    position: relative;
+    width: 100%;
+
+    .iconSearch {
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      margin: 12px 16px;
+      color: var(--text-color-secondary);
+    }
+
+    input {
+      width: calc(100% - 16px);
+      height: 42px;
+      padding: 0 16px 0 42px;
+      margin: 12px 0 12px 16px;
+      border-radius: 100px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-color);
+
+      &::placeholder {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .box {
+    border-right: 2px solid transparent;
+    background: transparent;
+    padding:16px;
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+
+    &:hover {
+      background: var(--input-bg-color);
+    }
+
+    .profileImage {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .textWrapperWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .textWrapper {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      .username {
+        font-size: calc(1rem - 1px);
+        font-weight: 500;
+      }
+
+      .username1 {
+        font-size: calc(1rem - 2px);
+        color: var(--text-color-secondary);
+      }
+
+      .dotIcon {
+        font-size: calc(1rem - 10px);
+        color: var(--text-color-secondary);
+      }
+    }
+  }
+
+  .selectedBox {
+    background: var(--input-bg-color);
+    border-right: 2px solid var(--border-color-secondary);
+  }
+}

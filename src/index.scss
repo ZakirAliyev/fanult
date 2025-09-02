@@ -34,8 +34,9 @@ button, a, .link, textarea {
   }
 }
 
-.icon {
+.icon, .box {
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .verifiedIcon {

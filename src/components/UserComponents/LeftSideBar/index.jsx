@@ -18,7 +18,7 @@ function LeftSideBar() {
         {id: 1, name: "Home", icon: <GoHome className={"icon"}/>, path: 'home'},
         {id: 2, name: "Explore ", icon: <IoSearchOutline className={"icon"}/>, path: 'explore'},
         {id: 3, name: "Notifications", icon: <IoNotificationsOutline className={"icon"}/>, path: ''},
-        {id: 4, name: "Messages", icon: <AiOutlineMessage className={"icon"}/>, path: ''},
+        {id: 4, name: "Messages", icon: <AiOutlineMessage className={"icon"}/>, path: 'messages'},
         {id: 5, name: "Communities", icon: <IoPeopleOutline className={"icon"}/>, path: ''},
         {id: 6, name: "Premium", icon: <TbPremiumRights className={"icon"}/>, path: ''},
         {id: 7, name: "Profile", icon: <HiOutlineUserCircle className={"icon"}/>, path: 'profile'},
